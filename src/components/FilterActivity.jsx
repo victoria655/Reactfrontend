@@ -81,7 +81,7 @@ const FilterActivity = ({ filter, setFilter }) => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/students/activities/student/${admissionNumber}/update_payment`,
+        `https://backendd-8.onrender.com/students/activities/student/${admissionNumber}/update_payment`,
         {
           method: "PATCH",
           headers: { "Content-Type": "application/json" },
